@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aling-self</title>
+    <style>
+        .flex-container{
+            border: 1px solid black;
+            max-width: 350px;
+            display: flex;
+            margin-bottom: 10px;
+            
+        }
+
+        .align-items{
+            align-items: center;
+        }
+
+        .colum {
+            flex-direction: column;
+
+        }
+        .item {
+            background-color: blueviolet;
+            font-size: 20px;
+            text-align: center;
+            color: white;
+            margin: 5px;
+        }
+
+        .center{
+            align-self: center;
+        }
+        .start{
+            align-self: flex-start;
+        }
+
+        .end {
+            align-self: flex-end;
+        }
+
+        .baseline{
+            align-self: baseline;
+        }
+        .stretch {
+            align-self: stretch;
+        }
+
+        .auto{
+            align-self: auto;
+        }
+
+    </style>
+</head>
+<body>
+    <p> align-items center </p>
+    <section class="flex-container align-items">
+        <div class="item auto">AAA</div>
+        <div class="item auto">123</div>
+        <div class="item auto">não sei falar mais gosto de comer </div>
+        <div class="item auto">Item</div>
+    </section>
+
+
+    <p> com varios item  </p>
+    <section class="flex-container col">
+        <div class="item  center">AAA</div>
+        <div class="item  baseline">123</div>
+        <div class="item start ">não sei falar mais gosto de comer </div>
+        <div class="item end ">Item para poder muder as coisas </div>
+    </section>
+
+
+    <p> em coluna  </p>
+    <section class="flex-container colum">
+        <div class="item auto">AAA</div>
+        <div class="item auto">123</div>
+        <div class="item auto">não sei falar mais gosto de comer </div>
+        <div class="item auto">Item</div>
+    </section>
+
+
+    <p> com varios item em coluna   </p>
+    <section class="flex-container colum ">
+        <div class="item  center">AAA</div>
+        <div class="item  baseline">123</div>
+        <div class="item start ">não sei falar mais gosto de comer </div>
+        <div class="item end ">Item para poder muder as coisas </div>
+    </section>
+    
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex shrink</title>
+    <style>
+        .flex-container {
+            display: flex;
+            border: 1px solid black;
+            max-width: 350px;
+            margin-bottom: 10px;
+        }
+
+        .item {
+            margin: 5px;
+            background-color: gold;
+            font-size: 20px;
+            text-align: center;
+        }
+
+        .s-1{
+            flex-shrink: 1;
+        }
+
+        .fg{
+            flex-grow: 1;
+        }
+
+        .s-0{
+            flex-shrink: 0;
+            flex-basis: 200px;
+        }
+
+    </style>
+</head>
+<body>
+   
+
+    <p> flex-shrink 1</p>
+    <div class="flex-container">
+        <div class="item s-1 fg">A</div>
+        <div class="item s-1 fg"> Casa Grande la casa de papel como é assim </div>
+        <div class="item s-1 fg">C</div>
+        <div class="item s-1 fg">D</div>
+        <div class="item s-1 fg">E</div>
+    </div>
+
+    <p> flex-shrink 0 ( Perceba que saiu do container XD</p>
+    <div class="flex-container">
+        <div class="item s-0 fg">A</div>
+        <div class="item s-0 fg">B CASA DE PAPAEL</div>
+        <div class="item s-0 fg">C</div>
+        <div class="item s-0 fg">D</div>
+        <div class="item s-0 fg">E</div>
+    </div>
+
+</body>
+</html>
